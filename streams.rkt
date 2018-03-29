@@ -84,3 +84,11 @@
 (force (cdr (oddstream))) ;example output: (3 . #<procedure>)
 (force (cdr (force (cdr (oddstream))))) ;example output: (5 . #<procedure>)
 ;infinite stream of odd
+
+;takes two streams and combines them using a function passed in as a third parameter
+(define (combine op str1 str2)
+    (stream-cons (op (stream-car str1) (stream-car str2)) (combine op (stream-cdr str1) (stream-cdr str2))))
+
+(combine + stream stream) ;output: (2 . #<procedure>)
+(force (cdr (combine + stream stream))) ;output: (4 . #<procedure>)
+(force (cdr (force (cdr (combine + stream stream))))) ;output: (6 . #<procedure>)
