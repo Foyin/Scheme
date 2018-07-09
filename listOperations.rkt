@@ -58,7 +58,7 @@
         (operator (car sequence) 
                   (reduce operator initial (cdr sequence)))))
 
-Technique known as reducing lists (also known as accumulating).
+;Technique known as reducing lists (also known as accumulating).
 
 ;(reduce + 0 (list 1 2 3 4 5)) => 15
 ;(reduce * 1 (list 1 2 3 4 5)) => 120
