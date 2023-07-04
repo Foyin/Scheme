@@ -1,4 +1,3 @@
-;Foyin Ogbara 100900459
 ;a
 (define (fib n)
     (- (* (/ 1 (sqrt 5)) (expt (/ (+ 1 (sqrt 5)) 2) n)))
