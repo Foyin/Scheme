@@ -1,7 +1,6 @@
 ;;;; METACIRCULAR EVALUATOR FROM CHAPTER 4 (SECTIONS 4.1.1-4.1.4) of
 ;;;; STRUCTURE AND INTERPRETATION OF COMPUTER PROGRAMS
-;Comp3007 - A4 - W2018
-;Modified by Foyin Ogbara 100900459
+;Modified by Foyin Ogbara 
 
 ;;; From section 4.1.4 -- must precede def of metacircular apply
 (define apply-in-underlying-scheme apply)
